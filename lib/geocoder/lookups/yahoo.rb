@@ -67,7 +67,7 @@ module Geocoder::Lookup
         :flags => "JXTSR",
         :gflags => "AC#{'R' if query.reverse_geocode?}",
         :locale => "#{configuration.language}_US",
-        :appid => configuration.api_key
+        :appid => configuration.app_id
       }.merge(super)
     end
 
